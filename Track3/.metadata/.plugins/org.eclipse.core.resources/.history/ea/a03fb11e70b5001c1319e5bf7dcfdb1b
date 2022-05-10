@@ -1,0 +1,28 @@
+package org.ssglobal.training.codes;
+
+import java.util.Date;
+
+public class Season {
+	
+	public void season(int year, int month, int day) {
+		
+		Date input = new Date(year, month, day);
+	
+		Date startSpring = new Date(122, 3, 15);
+		Date endSpring = new Date(122, 6, 15);
+		String eventSpring = "Spring";
+		
+		Date startSummer = new Date(122, 6, 16);
+		Date endSummer = new Date(122, 9, 15);
+		String eventSummer = "Summer";
+		
+		Date startFall = new Date(122, 9, 16);
+		Date endFall = new Date(122, 12, 15);
+		String eventFall = "Fall";
+		
+		Date startWinter = new Date(122, 12, 16);
+		Date endWinter = new Date(123, 3, 15);
+		String eventWinter = "Winter";
+	}
+
+}

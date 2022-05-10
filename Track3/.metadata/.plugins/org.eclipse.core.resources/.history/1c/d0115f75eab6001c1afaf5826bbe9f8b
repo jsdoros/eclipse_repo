@@ -1,0 +1,40 @@
+package org.ssglobal.training.codes.io;
+
+import java.io.File;
+import java.io.IOException;
+
+public class TestFile {
+
+	public static void main(String[] args) {
+
+		// Eclipse project / Java project --> root folder
+		File filePoem = new File("./src/config/poem.txt"); // Java path; Python uses absolute
+		System.out.println(filePoem.hashCode());
+		
+		try {
+			boolean isCreated = filePoem.createNewFile();
+			System.out.println(isCreated);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		File dirPages = new File("./src/pages");
+		boolean isDirCreated = dirPages.mkdir();
+		System.out.println(isDirCreated);
+		
+		File dirNetwork = new File("./src/config/network/socket");
+		boolean isDirNetworkCreated = dirNetwork.mkdirs();
+		System.out.println(isDirNetworkCreated);
+		
+		// Utilities
+		
+		try {
+			System.out.println(filePoem.getCanonicalPath());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		// Getters
+	}
+
+}

@@ -1,0 +1,17 @@
+package org.ssglobal.training.codes.wrappers;
+
+public class TestForms {
+
+	public static void main(String[] args) {
+		// Profile Form
+		// Name: _______
+		String name = "Juan Luna";
+		// Age: _________
+		String age = "200";
+		// Salary: __________
+		String salary = "80000.00";
+		
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package org.ssglobal.training.codes.util;
+
+import java.util.Arrays;
+
+public class TestArrays {
+
+	public static void main(String[] args) {
+		double[] grades = new double[] {100.0, 90.1, 80.2, 0.3, 60.4, 50.5};
+		
+		double[] temp = new double [60];
+		Arrays.fill(temp, 0);
+		for(double lookup: temp) {
+			System.out.format(lookup);
+		}
+	}
+
+}

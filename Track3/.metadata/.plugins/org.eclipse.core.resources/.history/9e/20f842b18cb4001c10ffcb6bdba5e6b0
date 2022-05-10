@@ -1,0 +1,23 @@
+package org.ssglobal.training.codes;
+
+import java.util.Scanner;
+
+public class Mileage {
+
+	public static void main(String[] args) {
+	}
+	
+	public String inputDetails(){
+		
+		return null;
+		
+
+	}
+
+	
+	public void computeMileage(){
+		
+
+	}
+
+}

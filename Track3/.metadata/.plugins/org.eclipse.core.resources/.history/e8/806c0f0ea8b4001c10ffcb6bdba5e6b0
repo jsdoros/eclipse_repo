@@ -1,0 +1,25 @@
+package org.ssglobal.training.codes;
+
+public class ContextGrammar {
+	
+	public void cfgparse(String input) {
+		
+		String newContext = "";
+		int letterA = input.indexOf("a");
+		
+		System.out.println("String test data: " + input);
+		
+		for(int i = 0; i < input.length(); i++) {
+			if (letterA >= 0) {
+				newContext = input.substring(-1, letterA);
+				newContext += "a";
+				newContext += input.substring(letterA + 1, input.length());
+				
+			}	
+		}
+		System.out.println("New Context is: " + newContext);
+		
+		
+		
+	}
+}

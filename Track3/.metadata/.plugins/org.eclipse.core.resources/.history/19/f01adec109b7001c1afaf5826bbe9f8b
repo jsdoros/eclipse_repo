@@ -1,0 +1,11 @@
+package org.ssglobal.training.codes.io;
+
+public class TestConsoleWriter {
+
+	public static void main(String[] args) {
+
+		PrintWriter consoleWriter = new PrintWriter(System.out);
+
+	}
+
+}

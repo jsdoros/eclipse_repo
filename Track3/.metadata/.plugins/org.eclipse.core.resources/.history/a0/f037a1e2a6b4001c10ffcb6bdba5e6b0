@@ -1,0 +1,12 @@
+package org.ssglobal.training.codes;
+
+public class TestContextGrammar {
+
+	public static void main(String[] args) {
+		
+		ContextGrammar test = new ContextGrammar();
+		System.out.println("New Context is: " + test.cfgparse("abaabbcbaccb"));
+		
+	}
+
+}

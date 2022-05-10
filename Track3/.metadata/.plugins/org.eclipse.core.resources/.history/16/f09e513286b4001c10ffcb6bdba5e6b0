@@ -1,0 +1,12 @@
+package org.ssglobal.training.codes;
+
+public class TestContextGrammar {
+
+	public static void main(String[] args) {
+		
+		ContextGrammar = new ContextGrammar();
+		test.cfgparse("abaabbcbaccb");
+		
+	}
+
+}

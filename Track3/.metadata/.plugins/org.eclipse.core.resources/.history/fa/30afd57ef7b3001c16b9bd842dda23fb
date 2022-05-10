@@ -1,0 +1,20 @@
+package org.ssglobal.training.codes.wrappers;
+
+public class TestWrappers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// Old version of upgrading primitive types
+		
+		Integer ageInt = new Integer(40);
+		Double salaryDbl = new Double(50000.00);
+		Character letterChr = new Character('L');
+		System.out.println(ageInt);
+		System.out.println(salaryDbl);
+		System.out.println(letterChr);
+		
+		System.out.println(Integer.MAX_VALUE);
+	}
+
+}

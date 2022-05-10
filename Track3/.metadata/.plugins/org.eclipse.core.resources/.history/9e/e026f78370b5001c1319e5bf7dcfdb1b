@@ -1,0 +1,13 @@
+package org.ssglobal.training.codes;
+
+public class TestSeason {
+
+	public static void main(String[] args) {
+
+		Season test = new Season();
+		test.season(122, 4, 6);
+		test.season(122, 9, 17);
+		test.season(122, 5, 3);
+		test.season(122, 12, 25);
+	}
+}

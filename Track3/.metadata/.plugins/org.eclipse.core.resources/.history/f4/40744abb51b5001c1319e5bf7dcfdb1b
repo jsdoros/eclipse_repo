@@ -1,0 +1,107 @@
+package org.ssglobal.training.codes.util;
+
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.TimeZone;
+
+public class TestCalendar {
+
+	public static void main(String[] args) {
+		
+		// Get date today
+		Calendar today = Calendar.getInstance();
+		System.out.println(today);
+		
+		// Calendar from setup
+		Calendar electionDay = new GregorianCalendar(2022, 4, 9, 18, 48, 67);
+		System.out.println(electionDay);
+		
+		Calendar todayCal = new GregorianCalendar();
+		Date now = new Date();
+		todayCal.setTime(now);
+		TimeZone manilaTmz = TimeZone.getTimeZone("Asia/Manila");
+		todayCal.setTimeZone(manilaTmz);
+		System.out.println(todayCal);
+		
+		// Utility operations
+		today.add(Calendar.MONTH, 2);
+		today.add(Calendar.YEAR, 10);
+		today.add(Calendar.DATE, -5);
+		System.out.println(today);
+		//today.getTime();
+		//System.out.println(today);
+		
+		// will roll back:
+		
+		electionDay.roll(Calendar.DATE, 10);
+		electionDay.roll(Calendar.DATE, 20);
+		System.out.println(electionDay);
+		
+		electionDay.roll(Calendar.MONTH, 10);
+		System.out.println(electionDay);
+		
+		// Comparison
+		
+		System.out.println(today.equals(electionDay));
+		System.out.println(today.after(electionDay));
+		System.out.println(today.before(electionDay));
+		
+		System.out.println(electionDay.get(Calendar.MONTH));
+		
+		
+	}
+
+}
+
+class JulianCalendar extends Calendar{
+
+	@Override
+	protected void computeTime() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	protected void computeFields() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void add(int field, int amount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void roll(int field, boolean up) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getMinimum(int field) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getMaximum(int field) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getGreatestMinimum(int field) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getLeastMaximum(int field) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}

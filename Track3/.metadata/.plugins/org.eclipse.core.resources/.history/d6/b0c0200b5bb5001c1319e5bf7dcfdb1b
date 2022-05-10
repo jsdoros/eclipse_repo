@@ -1,0 +1,10 @@
+package org.ssglobal.training.codes.util;
+
+public class Diary {
+		
+		private int[][] entries = new int [12][32];
+		
+		public void createEvent(Date date1, Date date2, String str) {
+			
+		}
+}

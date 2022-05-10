@@ -1,0 +1,5 @@
+package org.ssglobal.training.codes.wrappers;
+
+public class Palindrome {
+
+}

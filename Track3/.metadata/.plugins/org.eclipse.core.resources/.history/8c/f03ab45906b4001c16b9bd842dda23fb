@@ -1,0 +1,11 @@
+package org.ssglobal.training.codes;
+
+public class TestBombTwist {
+
+	public static void main(String[] args) {
+		BombTwist test = new BombTwist();
+		test.guessTheWord("butterfly");
+		System.out.println("test.guessTheWord("butterfly");
+	}
+
+}

@@ -1,0 +1,17 @@
+package org.ssglobal.training.codes;
+
+import java.util.Scanner;
+
+public class MetricConversion {
+
+		public void showMenu() {
+			
+			System.out.println("Enter a number.");
+			
+			Scanner scanNumber = new Scanner(System.in);
+			int x = scanNumber.nextInt();
+			if (x >= 0) {
+				
+			}
+		}
+}

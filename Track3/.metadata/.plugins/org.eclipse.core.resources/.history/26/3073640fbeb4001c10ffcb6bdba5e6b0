@@ -1,0 +1,11 @@
+package org.ssglobal.training.codes.util;
+
+public class TestStringTokenizer {
+
+	public static void main(String[] args) {
+		String input = "The fox jumps over the window";
+		TestStringTokenizer tokenizer = new StringTokenizer(input);
+
+	}
+
+}

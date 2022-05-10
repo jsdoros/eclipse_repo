@@ -1,0 +1,20 @@
+package org.ssglobal.training.codes.time;
+
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+
+public class TestLocalDateTime {
+
+	public static void main(String[] args) {
+
+		LocalDateTime now = LocalDateTime.now();
+		System.out.println(now);
+		
+		ZoneId tmz = ZoneId.of("Asia/Manila");
+		ZonedDateTime nowWithTmz = ZonedDateTime.of(now, tmz);
+		System.out.println(nowWithTmz);
+
+	}
+
+}

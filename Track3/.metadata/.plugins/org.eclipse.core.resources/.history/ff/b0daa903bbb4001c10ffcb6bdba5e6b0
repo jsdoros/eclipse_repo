@@ -1,0 +1,53 @@
+package org.ssglobal.training.codes.util;
+
+import java.util.Arrays;
+
+public class TestArrays {
+
+	public static void main(String[] args) {
+				
+		double[] temp = new double [60];
+		Arrays.fill(temp, -1.0);
+		for(double lookup: temp) {
+			System.out.format("%f ", lookup);
+		}
+		System.out.println();
+		
+		/*
+		double[] grades = new double[] {100.0, 90.1, 80.2, 0.3, 60.4, 50.5};
+		double[] gradestemp = new double[0];
+		System.out.println(gradestemp.hashCode());
+		gradestemp = Arrays.copyOf(grades, grades.length);
+		for(double lookup: gradestemp) {
+			System.out.format("%f ", lookup);
+		}
+		System.out.println();
+		System.out.println(gradestemp.hashCode());
+		
+		*/
+		
+		// best practice:
+		
+		double[] grades = new double[] {100.0, 90.1, 80.2, 0.3, 60.4, 50.5};
+		double[] gradestemp = Arrays.copyOf(grades, grades.length);
+		for(double lookup: gradestemp) {
+			System.out.format("%f ", lookup);
+		}
+		System.out.println();
+		
+		double[] gradestemp2 = Arrays.copyOfRange(grades, 2, 5); // 80.2 to 60.4
+		for(double lookup: gradestemp2) {
+			System.out.format("%f ", lookup);
+		}
+		
+		// Note: You cannot use binarySearch() if the grades are not sorted.
+		Arrays.sort(grades);
+		for(double lookup: grades) {
+			System.out.format("%f ", lookup);
+		}
+		
+		double grade = 80.2;
+		
+	}
+
+}

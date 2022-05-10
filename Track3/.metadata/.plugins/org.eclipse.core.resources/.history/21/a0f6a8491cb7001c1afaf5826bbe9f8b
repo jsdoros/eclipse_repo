@@ -1,0 +1,31 @@
+package org.ssglobal.training.codes.io;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.StreamTokenizer;
+
+public class TestStreamTokenizer {
+
+	public static void main(String[] args) {
+
+		try {
+			FileReader fr = new FileReader("./src/config/mines.txt");
+			StreamTokenizer tokenizer = new StreamTokenizer(fr);
+			tokenizer.nextToken();
+			
+			int tokenType = tokenizer.nextToken();
+			
+			while(!(tokenType == StreamTokenizer.TT_EOF)) {
+				tokenValue = tokenizer.nval;
+				tokenType = tokenizer.nextToken();				
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

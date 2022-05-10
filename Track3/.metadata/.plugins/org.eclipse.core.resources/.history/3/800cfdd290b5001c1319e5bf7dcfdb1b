@@ -1,0 +1,14 @@
+package org.ssglobal.training.codes.time;
+
+import java.time.LocalTime;
+
+public class TestLocalTime {
+
+	public static void main(String[] args) {
+		
+		LocalTime now = LocalTime.now();
+		System.out.println(now);
+
+	}
+
+}

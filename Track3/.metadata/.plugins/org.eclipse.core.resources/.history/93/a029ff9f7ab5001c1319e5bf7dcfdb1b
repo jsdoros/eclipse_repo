@@ -1,0 +1,30 @@
+package org.ssglobal.training.codes;
+
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class NameCompressor {
+
+	public void compress() {
+		
+		System.out.println("Enter name.");
+		String inputName = null;
+		StringTokenizer tokenizer = null;
+				
+		Scanner scanName = new Scanner(System.in);
+		inputName = new String(scanName.nextLine());
+		tokenizer = new StringTokenizer(inputName, " ");
+		
+		
+		String lastName = null;	
+		
+		while(tokenizer.hasMoreTokens()) { 
+			lastName = tokenizer.nextToken();
+        }
+		
+		
+		String firstName = inputName.substring(0, 1);
+		System.out.print(lastName + ", " + firstName +".");
+		
+	}}
+

@@ -1,0 +1,8 @@
+
+public class BlockWordString {
+
+		public String blockword(String input) {
+			final char = BLANK = " ";
+			return null;
+		}
+}

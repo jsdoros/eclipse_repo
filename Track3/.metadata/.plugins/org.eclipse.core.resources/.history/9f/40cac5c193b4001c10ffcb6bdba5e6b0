@@ -1,0 +1,50 @@
+package org.ssglobal.training.codes;
+
+import java.util.Scanner;
+
+public class Mileage {
+
+	public static void main(String[] args) {
+	}
+	
+	public void inputDetails(){
+		
+		// Initialize
+		String name = "";
+		double pricePerGal = 0.0;
+		double totalPrice = 0.0;
+		int initialOdo = 0;
+		int finalOdo = 0;
+		
+		// Input
+		
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter your name.");
+		name = s.nextLine();
+		System.out.println("Enter price per gallon");
+		pricePerGal = s.nextDouble();
+		System.out.println("Enter total price for fill up.");
+		totalPrice = s.nextDouble();
+		System.out.println("Enter initial odometer value");
+		initialOdo = s.nextInt();
+		System.out.println("Enter final odometer value");
+		finalOdo = s.nextInt(); 
+	}
+
+	
+	public void computeMileage(){
+		
+		Mileage m = new Mileage();
+		m.inputDetails();
+		
+		// formula
+		//double gallonsUsed = totalPrice / pricePerGal;
+		//diffOdo = finalOdo - initialOdo;
+		//milesPerGal = diffOdo / gallonsUsed;
+		//milesRun = diffOdo * (1 /milesPerGal);
+		
+		//System.out.println(name + ", you drove " + diffOdo + " using"
+				+ milesRun + "with an mpg of " + milesPerGal + ".");
+	}
+
+}

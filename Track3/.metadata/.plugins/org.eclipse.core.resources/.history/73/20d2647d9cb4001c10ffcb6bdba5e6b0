@@ -1,0 +1,25 @@
+package org.ssglobal.training.codes;
+
+public class Depreciation {
+	
+	public void depreciate() {
+		
+		// Initial values
+		int machineCost = 28000;
+		final int rate = 4000;
+		int eoyVal = machineCost - rate;
+		int accumDepreciation = 0 + rate;
+		
+		// Header
+		System.out.println("Year " + "Depreciation  " + "End-of-year value " + "Accumulated Depreciation");
+		System.out.println("==== " + "============  " + "================= " + "========================");
+		
+		// Body
+		for (int year = 0; year < 7; year++) {
+			System.out.println(year+1 + "    " + rate + "        " + eoyVal  + "            " + accumDepreciation);
+			eoyVal -= rate;
+			accumDepreciation += rate;
+		}
+	}
+
+}

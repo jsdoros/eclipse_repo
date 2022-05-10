@@ -1,0 +1,10 @@
+package org.ssglobal.training.codes;
+
+public class Depreciation {
+	
+	public void depreciate() {
+		double machineCost = 28000;
+		double rate = 4000;
+	}
+
+}

@@ -1,0 +1,16 @@
+package org.ssglobal.training.codes.lang;
+
+public class TestRunTIme {
+	
+	public static void main(String[] args) {
+		//Monitoring of the heap
+		// Semi-profiler utility
+		
+		Runtime rt = Runtime.getRuntime();
+		
+		System.out.format("The total memory of the heap: %d", rt.totalMemory());// heap + stack memory
+		System.out.format("The free memory of the heap: %d", rt.freeMemory());
+		System.out.format("The free max memory of the heap: %d", rt.maxMemory());
+	}
+
+}

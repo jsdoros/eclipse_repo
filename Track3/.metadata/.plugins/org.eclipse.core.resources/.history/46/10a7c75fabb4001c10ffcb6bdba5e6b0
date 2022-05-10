@@ -1,0 +1,57 @@
+package org.ssglobal.training.codes;
+
+public class ContextGrammar {
+	
+	public void cfgparse(String input) {
+		
+		String newContextA = "";
+		String newContextB = "";
+		String newContextC = "";
+		int letterA = input.indexOf("a");
+		int letterB = input.indexOf("bb");
+		int letterC = input.indexOf("cc");
+		
+		// A
+		
+		System.out.println("String test data: " + input);
+		
+		for(int i = 0; i < input.length(); i++) {
+			if (letterA >= 0) {
+				newContextA = input.substring(0, letterA);
+				newContextA += "aa";
+				newContextA += input.substring(letterA + 1, input.length());
+				
+			}	
+		}
+		System.out.println("New Context is: " + newContextA);
+		
+		
+		// B
+		
+		System.out.println("String test data: " + input);
+		
+		for(int i = 0; i < input.length(); i++) {
+			if (letterB >= 0) {
+				newContextB = input.substring(0, letterB);
+				newContextB += "b";
+				newContextB += input.substring(letterB + 1, input.length());
+				
+			}	
+		}
+		System.out.println("New Context is: " + newContextB);
+		
+		// C
+		
+		System.out.println("String test data: " + input);
+		
+		for(int i = 0; i < input.length(); i++) {
+			if (letterC >= 0) {
+				newContextC = input.substring(0, letterC);
+				newContextC += "ccc";
+				newContextC += input.substring(letterC + 1, input.length());
+								
+		}
+		System.out.println("New Context is: " + newContextC);
+		
+	}
+}

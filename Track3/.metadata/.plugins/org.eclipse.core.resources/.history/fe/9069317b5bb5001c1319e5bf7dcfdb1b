@@ -1,0 +1,17 @@
+package org.ssglobal.training.codes.util;
+
+import java.util.Date;
+
+public class Diary {
+		
+		private int[][] entries = new int [12][32];
+		
+		public void createEvent(Date date1, Date date2, String str) {
+			
+			if(date2.before(date1)) {
+				System.out.println("Invalid date range");
+			}else {
+				long duration = date2.getTime() - date1.getTime();
+			}
+		}
+}

@@ -1,0 +1,16 @@
+import java.io.File;
+
+public class FileTransfer {
+
+		public void transfer() {
+			
+			File file1 = new File("./src/config/data1.txt");
+			
+			
+			File file2 = new File("./src/config/data2.txt");
+			
+		}
+
+}
+
+

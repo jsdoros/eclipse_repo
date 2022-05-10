@@ -1,0 +1,58 @@
+package org.ssglobal.training.codes;
+
+import java.util.Scanner;
+
+public class BombTwist {
+	
+	public String guessTheWord(String input) {
+		
+		
+		String wordToGuess = "";
+		String updatedWord = "";
+		String letter = "";
+		int numGuess = 0;
+		int numCorrectGuess = input.length();
+		
+		
+		// Print the word to be guessed in asterisks.
+		
+		System.out.println("Guess this word:");
+		for (int i = 0; i < input.length(); i++) {
+			wordToGuess += "*";								
+			}
+		System.out.println(wordToGuess + "\n");
+		
+		// Player inputs letter guess.
+		
+		do {
+		
+		System.out.println("Enter a letter to guess the word.");
+		
+		Scanner s = new Scanner(System.in);
+		letter = s.nextLine();
+		numGuess =  numGuess + 1;
+
+		// Correct letter guess
+		
+		if (input.indexOf(letter) >= 0) {
+			updatedWord = wordToGuess.substring(0, input.indexOf(letter)); 
+			updatedWord += letter;												
+			updatedWord += wordToGuess.substring(input.indexOf(letter) + 1, wordToGuess.length());
+			wordToGuess = updatedWord;
+			System.out.println(wordToGuess + "\n");
+			numCorrectGuess--;
+			} 
+
+		
+		} while (numCorrectGuess != 0 && wordToGuess != input && numGuess < 7);
+		
+		if (wordToGuess.equals(input)) {
+			System.out.println("You guessed it right! The word is: ");
+		}else {
+			System.out.println("BOMB EXPLODED! You lost.);
+		}
+		
+		return wordToGuess;
+		}
+	}
+

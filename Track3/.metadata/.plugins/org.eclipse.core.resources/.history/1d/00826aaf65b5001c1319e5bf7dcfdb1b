@@ -1,0 +1,55 @@
+package org.ssglobal.training.codes;
+
+import java.util.Scanner;
+
+public class MetricConversion {
+
+		public void showMenu() {
+			
+			System.out.println("Enter a number.");
+			
+			Scanner scanNumber = new Scanner(System.in);
+			double x = scanNumber.nextInt();
+			if (x < 0) {
+				System.out.println("Enter a valid number");
+			}else if (x >= 0){
+				
+				int y = 0;
+				do {
+					System.out.println("Convert: \n 1. Inches to Centimeters	5. Centimeters to Inches  \n 2. Feet to Centimeters		6. Centimeters to Feet"
+										+ "\n 3. Yards to Meters		7. Meters to Yards \n 4. Miles to Kilometers		8. Kilometers to Miles");
+					System.out.println("Enter your choice: ");
+					Scanner scanConvert = new Scanner(System.in);
+					y = scanConvert.nextInt();
+					double output = 0;
+					switch(y) {
+					case 1: output = x * 2.54;
+							System.out.println(x + " inches equals " + output +  " centimeters.");
+							break;
+					case 2: output = x * 30;
+							System.out.println(x + " feet equals " + output +  " centimeters.");
+							break;
+					case 3: output = x * 0.91;
+							System.out.println(x + " yards equals " + output +  " meters.");
+							break;
+					case 4: output = x * 1.6;
+							System.out.println(x + " miles equals " + output +  " kilometers.");
+							break;
+					case 5: output = x / 2.54;
+							System.out.println(x + " centimeters equals " + output +  " feet.");
+							break;
+					case 6: output = x / 30;
+							System.out.println(x + " centimeters equals " + output +  " feet.");
+							break;
+					case 7: output = x / 0.91;
+							System.out.println(x + " meters equals " + output +  " yards.");
+							break;
+					case 8: output = x / 1.6;
+							System.out.println(x + " kilometers equals " + output +  " miles");
+							break;
+					}
+				}while (y != 9);
+		}
+	}
+}
+

@@ -1,0 +1,41 @@
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class FileTransfer {
+
+		public void transfer() {
+			
+			File file1 = new File("./src/config/data1.txt");
+			File file2 = new File("./src/config/data2.txt");
+			
+			try {
+				
+				
+			
+				FileInputStream fis = new FileInputStream(file1);
+				byte[] msgBuffer1 = new byte[4021];
+				fis.read(msgBuffer1);
+				System.out.println(new String(msgBuffer1));
+				fis1.close();
+				
+				FileInputStream fis2 = new FileInputStream(file2);
+				byte[] msgBuffer2 = new byte[4021];
+				fis2.read(msgBuffer2);
+				System.out.println(new String(msgBuffer2));
+				fis2.close();
+				
+				
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			
+			
+			
+			}
+
+}
+
+

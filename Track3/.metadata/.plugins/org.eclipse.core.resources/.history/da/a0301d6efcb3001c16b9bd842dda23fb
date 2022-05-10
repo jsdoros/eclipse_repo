@@ -1,0 +1,7 @@
+
+public class TestBlockWordString {
+	String blockword = "This is how we would ordinarily write a sentence";
+	String[] words = blockword.split(blockword, 5);
+	for (String lookup : words) {
+		System.out.println(lookup);	
+}

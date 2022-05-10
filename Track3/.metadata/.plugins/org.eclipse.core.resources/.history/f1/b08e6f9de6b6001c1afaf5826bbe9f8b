@@ -1,0 +1,15 @@
+package org.ssglobal.training.codes.io;
+
+import java.io.File;
+
+public class TestFile {
+
+	public static void main(String[] args) {
+
+		// Eclipse project / Java project --> root folder
+		File filePoem = new File("./src/config/poem.txt"); // Java path; Python uses absolute
+		System.out.println(filePoem);
+		
+	}
+
+}

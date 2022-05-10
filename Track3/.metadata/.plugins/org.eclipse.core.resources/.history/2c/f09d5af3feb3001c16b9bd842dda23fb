@@ -1,0 +1,13 @@
+
+public class TestBlockWordString {
+	
+	public static void main(String[] args) {
+	String blockword = "Thisishowwewouldordinarilywriteasentence";
+	
+	for ()
+	int size = 5;
+    String[] word = blockword.split("" + size + "");
+    System.out.println(word);
+    
+}
+}

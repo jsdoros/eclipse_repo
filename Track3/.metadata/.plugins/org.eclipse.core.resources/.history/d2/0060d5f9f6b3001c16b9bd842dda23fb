@@ -1,0 +1,12 @@
+package org.ssglobal.training.codes.wrappers;
+
+public class TestWrappers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// Old version of upgrading primitive types
+		
+	}
+
+}

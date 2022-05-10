@@ -1,0 +1,14 @@
+package org.ssglobal.training.codes.chars;
+
+public class TestImmutability {
+
+	public static void main(String[] args) {
+		String name = new String("Juan Luna");
+		System.out.println(name.hashCode());
+		name = name + "of Manila";
+		name = name + ", Philippines";
+		name = name.concat(" circa 1890");
+
+	}
+
+}

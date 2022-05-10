@@ -1,0 +1,22 @@
+package org.ssglobal.training.codes.util;
+
+import java.util.StringTokenizer;
+
+public class TestStringTokenizer {
+
+	public static void main(String[] args) {
+		String input = "The fox jumps over the window";
+		StringTokenizer tokenizer = new StringTokenizer(input, "(over)");
+		while(tokenizer.hasMoreTokens()) { 
+			System.out.println(tokenizer.nextToken()); // 2 roles: fetches and ++ counter	
+		}
+		
+		System.out.println("-------------------------");
+		
+		String [] words = input.split("(over)");
+		for (String lookup: words) {
+			System.out.println(lookup);
+		}
+	}
+
+}

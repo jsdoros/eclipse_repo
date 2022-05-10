@@ -1,0 +1,19 @@
+package org.ssglobal.training.codes.chars;
+
+public class TestStringBuilder {
+
+	public static void main(String[] args) {
+		StringBuilder sb = new StringBuilder("I love Java.");
+		StringBuilder sb2 = new StringBuilder();
+		StringBuilder sb3 = null;
+		
+		// Operations
+		
+		// Append = insertion at the end
+		sb.append(" And Python also");
+		sb.append(2022);
+		System.out.println(sb);
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package org.ssglobal.training.codes;
+
+public class MetricConversion {
+
+		public void showMenu() {
+			
+			System.out.println("Enter a number.");
+			
+			Scanner scanNumber = new Scanner(System.in);
+			
+		}
+}

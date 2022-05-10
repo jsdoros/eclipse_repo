@@ -1,0 +1,39 @@
+package org.ssglobal.training.codes;
+
+import java.io.IOException;
+
+public class ExecuteCommandGrades {
+	
+	public void main(String[] args) throws IOException {
+		
+		Runtime rt = Runtime.getRuntime();
+		String lectArray = "";
+		String labArray = "";
+		
+		String[] cmdArray = new String[2];
+		cmdArray[0] = "cmd.exe";
+		cmdArray[1] = "java ExecuteCommandGrades LECT lectArray LAB labArray";
+		
+		rt.exec(cmdArray);
+		
+		/*
+		System.in.read(lectArray);
+		System.in.read(labArray);
+		*/
+		
+		double aveLecGrade = 5 / lectArray.length();
+		
+		AVERAGE LECTURE GRADE: 68.800
+		NO. OF STUDENT (LECT): 5
+		AVERAGE LAB GRADE: 68.600
+		NO. OF STUDENT (LAB): 5
+		
+		
+
+		
+	
+		
+	
+	}
+
+}

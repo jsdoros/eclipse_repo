@@ -1,0 +1,9 @@
+
+public class TestBlockWordString {
+	
+	public static void main(String[] args) {
+	BlockWordString bws = "Thisishowwewouldordinarilywriteasentence";
+	
+	System.out.println(bws.blockword("Thisishowwewouldordinarilywriteasentence"));
+}
+}

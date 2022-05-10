@@ -1,0 +1,7 @@
+
+public class BlockWordString {
+
+		public String blockword() {
+			return null;
+		}
+}

@@ -1,0 +1,28 @@
+import java.util.Date;
+
+public class Diary {
+
+	public void createEvent(Date day1, String event) {
+		
+		String day ="";
+		Date now = new Date();
+		now.toString();
+		
+	String [][] diary = new String [0][0];
+		
+		diary[0][0] = now;
+				
+		//this.createEvent(day1, event);
+		//Date day = new Date(122, 3, 6);
+	}
+		
+		
+	
+	public void printEvent(Date date) {
+		
+		for(String lookup: date) {
+		System.out.println(date);
+		}
+	}
+
+}

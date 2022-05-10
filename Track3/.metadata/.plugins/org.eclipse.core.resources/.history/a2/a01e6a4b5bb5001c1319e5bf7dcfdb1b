@@ -1,0 +1,15 @@
+package org.ssglobal.training.codes.util;
+
+import java.util.Date;
+
+public class Diary {
+		
+		private int[][] entries = new int [12][32];
+		
+		public void createEvent(Date date1, Date date2, String str) {
+			
+			if(date2.after(date1)) {
+				
+			}
+		}
+}

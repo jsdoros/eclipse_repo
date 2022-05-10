@@ -1,0 +1,12 @@
+package org.ssglobal.training.codes.chars;
+
+public class TestStringBuilder {
+
+	public static void main(String[] args) {
+		StringBuilder sb = new StringBuilder("I love Java.");
+		StringBuilder sb2 = new StringBuilder();
+		StringBuilder sb3 = null;
+
+	}
+
+}

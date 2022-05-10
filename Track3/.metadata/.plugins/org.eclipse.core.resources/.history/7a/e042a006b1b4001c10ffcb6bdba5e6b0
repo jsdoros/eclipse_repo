@@ -1,0 +1,14 @@
+package org.ssglobal.training.codes.util;
+
+import java.util.Scanner;
+
+public class TestScanner {
+
+	public static void main(String[] args) {
+		// Reading file
+		File file = new File ("./src/config/names.txt");
+		Scanner scan = new Scanner();
+
+	}
+
+}

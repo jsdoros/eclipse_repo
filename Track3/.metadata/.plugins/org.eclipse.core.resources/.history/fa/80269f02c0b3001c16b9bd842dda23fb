@@ -1,0 +1,9 @@
+package org.ssglobal.training.codes.lang;
+
+public class TestRunTIme {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

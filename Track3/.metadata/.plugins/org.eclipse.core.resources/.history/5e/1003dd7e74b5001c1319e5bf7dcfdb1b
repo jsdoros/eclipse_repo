@@ -1,0 +1,10 @@
+package org.ssglobal.training.codes;
+
+public class TestNameCompressor {
+
+	public static void main(String[] args) {
+		
+		NameCompressor test = new NameCompressor();
+		test.compress();
+	}
+}

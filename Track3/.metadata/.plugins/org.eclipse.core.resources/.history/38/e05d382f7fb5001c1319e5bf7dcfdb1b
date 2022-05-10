@@ -1,0 +1,10 @@
+package org.ssglobal.training.codes;
+
+import java.util.Scanner;
+
+public class MyCalendar {
+	
+	public void printCalendar(int month, int year) {
+		
+	
+			

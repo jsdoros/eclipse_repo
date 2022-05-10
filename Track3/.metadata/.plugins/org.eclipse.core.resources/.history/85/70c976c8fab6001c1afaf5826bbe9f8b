@@ -1,0 +1,16 @@
+package org.ssglobal.training.codes.io;
+
+import java.io.File;
+import java.io.FileOutputStream;
+
+public class TestFileOutputStream {
+
+	public static void main(String[] args) {
+
+		File file = new File("poem.txt");
+		
+		FileOutputStream fos = new FileOutputStream(file);
+
+	}
+
+}

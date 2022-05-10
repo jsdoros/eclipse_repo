@@ -1,0 +1,25 @@
+package org.ssglobal.training.codes;
+
+import java.util.Calendar;
+
+public class TestMyCalendar {
+
+	
+	public static void main(String[] args) {
+	
+	
+		/*
+		Scanner scanMonth = new Scanner(System.in);
+		String inputMonth = scanMonth.nextLine();
+		int month = inputMonth.get(Calendar.MONTH);
+		
+		Scanner scanYear = new Scanner(System.in);
+		String inputYear = scanMonth.nextLine();
+		int year = inputYear.get(Calendar.YEAR);
+		*/
+		
+		MyCalendar test = new MyCalendar();
+		test.printCalendar();
+	}
+
+}

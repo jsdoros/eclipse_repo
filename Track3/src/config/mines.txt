@@ -1,0 +1,4 @@
+apple 10 10 5 7 3 5 6 7 10
+lemon 7 5 4 3 6
+banana 4 2 4
+avocado 3 3 6 7

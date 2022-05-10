@@ -1,0 +1,32 @@
+package org.ssglobal.training.codes;
+
+import java.util.Scanner;
+
+public class MetricConversion {
+
+		public void showMenu() {
+			
+			System.out.println("Enter a number.");
+			
+			Scanner scanNumber = new Scanner(System.in);
+			int x = scanNumber.nextInt();
+			if (x < 0) {
+				System.out.println("Enter a valid number");
+			}else {
+				do {
+					System.out.println("Convert: \n 1. Inches to Centimeters	5. Centimeters to Inches  \n 2. Feet to Centimeters		6. Centimeters to Feet"
+										+ "3. Yards to Meters	7. Meters to Yards \n 4. Miles to Kilometers	8. Kilometers to Miles");
+					
+					Scanner scanConvert = new Scanner(System.in);
+					int y = scanConvert.nextInt();
+					double output = 0;
+					switch(y) {
+					case 1: output = x * 2.54;
+					case 2: output = x * 30;
+					
+					}
+				}while (x != 9);
+		}
+	}
+}
+

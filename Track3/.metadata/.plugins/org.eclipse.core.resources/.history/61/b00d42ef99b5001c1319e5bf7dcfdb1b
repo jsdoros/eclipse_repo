@@ -1,0 +1,23 @@
+package org.ssglobal.training.codes;
+
+import java.util.Scanner;
+
+public class TestMyCalendar {
+
+	
+	public static void main(String[] args) {
+	
+	
+		Scanner scanMonth = new Scanner(System.in);
+		int inputMonth = scanMonth.nextInt();
+				
+		Scanner scanYear = new Scanner(System.in);
+		int inputYear = scanMonth.nextInt();
+		
+		MyCalendar test = new MyCalendar();
+		test.printCalendar(inputMonth, inputYear);
+		
+	
+	}
+
+}

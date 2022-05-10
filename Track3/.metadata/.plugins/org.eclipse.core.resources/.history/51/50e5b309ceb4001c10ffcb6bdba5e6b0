@@ -1,0 +1,15 @@
+package org.ssglobal.training.codes.util;
+
+import java.util.Calendar;
+
+public class TestCalendar {
+
+	public static void main(String[] args) {
+		
+		// Get date today
+		Calendar today = Calendar.getInstance();
+		System.out.println(today);
+
+	}
+
+}

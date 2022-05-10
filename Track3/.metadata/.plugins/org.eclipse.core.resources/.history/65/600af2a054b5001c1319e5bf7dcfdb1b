@@ -1,0 +1,21 @@
+import java.util.Date;
+
+public class Diary {
+
+	public void createEvent(Date day1, String event) {
+		
+		
+		this.createEvent(day1, event);
+		Date day1 = new Date();
+		
+		
+		
+		
+	
+	public void printEvent(Date date) {
+		
+	}
+
+	}
+
+}

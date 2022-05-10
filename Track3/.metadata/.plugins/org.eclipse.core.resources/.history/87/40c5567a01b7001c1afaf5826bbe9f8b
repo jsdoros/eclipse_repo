@@ -1,0 +1,13 @@
+package org.ssglobal.training.codes.io;
+
+import java.io.File;
+
+public class TestFileWriter {
+
+	public static void main(String[] args) {
+		
+		File file = new File("./src/config/poem.txt");
+
+	}
+
+}

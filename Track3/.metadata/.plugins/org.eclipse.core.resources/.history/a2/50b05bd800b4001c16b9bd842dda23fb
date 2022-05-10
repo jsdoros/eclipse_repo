@@ -1,0 +1,9 @@
+
+public class BlockWordString {
+
+		public String blockword(String input) {
+			final char = BLANK = ' ';
+			final int LEN = input.length();
+			return null;
+		}
+}

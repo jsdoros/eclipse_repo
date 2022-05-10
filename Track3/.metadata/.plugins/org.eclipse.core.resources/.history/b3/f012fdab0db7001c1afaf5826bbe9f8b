@@ -1,0 +1,10 @@
+package org.ssglobal.training.codes.io;
+
+public class TestKeyboardInput {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

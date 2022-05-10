@@ -1,0 +1,11 @@
+package org.ssglobal.training.codes;
+
+public class TestMileage {
+
+	public static void main(String[] args) {
+		Mileage m = new Mileage();
+		m.inputDetails();
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package org.ssglobal.training.codes.util;
+
+import java.util.Properties;
+
+public class TestProperties {
+
+	public static void main(String[] args) {
+		
+		Properties props = new Properties();
+		
+
+	}
+
+}

@@ -1,0 +1,19 @@
+import java.util.Date;
+
+public class Diary {
+
+	public void createEvent(Date day1, String event) {
+		
+		String [][] diary = new String [day1][event];
+		
+		this.createEvent(day1, event);
+		Date day = new Date(122, 3, 6);
+	}
+		
+		
+	
+	public void printEvent(Date date) {
+		System.out.println(date);
+	}
+
+}

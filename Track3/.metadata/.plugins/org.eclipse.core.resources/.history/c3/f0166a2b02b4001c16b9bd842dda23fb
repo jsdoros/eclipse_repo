@@ -1,0 +1,21 @@
+
+public class BlockWordString {
+
+		public String blockword(String input) {
+			final char BLANK = ' ';
+			final int LEN = input.length();
+			
+			// array??
+			// string??
+			// string buffer??
+			// stringbuilder
+			
+			// for-loop
+			// for-each??
+			
+			StringBuilder temp = new StringBuilder();
+			for(int i = 0; i < LEN; i++)
+			
+			return null;
+		}
+}

@@ -1,0 +1,37 @@
+package org.ssglobal.training.codes;
+
+import java.util.Date;
+
+public class Season {
+	
+	public void season(int year, int month, int day) {
+		
+		// input from test class
+		Date input = new Date(year, month, day);
+	
+		// boundaries
+		Date startSpring = new Date(year, 3, 15);
+		Date endSpring = new Date(year, 6, 15);
+		
+		Date startSummer = new Date(year, 6, 16);
+		Date endSummer = new Date(year, 9, 15);
+		
+		Date startFall = new Date(year, 9, 16);
+		Date endFall = new Date(year, 12, 15);
+		
+		Date startWinter = new Date(year, 12, 16);
+		Date endWinter = new Date(year, 3, 15);
+		
+		// output
+		
+		if(input.equals(startSpring) || (input.after(startSpring) && input.before(endSpring)) || input.equals(endSpring)) {
+			System.out.println("Spring");
+		}else if ((input.equals(startSummer) || (input.after(startSummer) && input.before(endSummer)) || input.equals(endSummer))){
+			System.out.println("Summer");
+			}else if(input.equals(startFall) || (input.after(startFall) && input.before(endFall)) || input.equals(endFall)) {
+				System.out.println("Fall");
+				}else if(input.equals(startWinter) || (input.after(startWinter) && input.before(endWinter)) || input.equals(endWinter)) {
+					System.out.println("Winter");		
+		}
+	}
+}

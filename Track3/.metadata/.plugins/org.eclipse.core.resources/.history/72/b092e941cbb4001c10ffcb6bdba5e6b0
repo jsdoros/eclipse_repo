@@ -1,0 +1,15 @@
+package org.ssglobal.training.codes.util;
+
+import java.util.Date;
+
+public class TestDates {
+
+	public static void main(String[] args) {
+		// The date Now()
+		
+		Date now = new Date();
+		System.out.println(now);
+
+	}
+
+}

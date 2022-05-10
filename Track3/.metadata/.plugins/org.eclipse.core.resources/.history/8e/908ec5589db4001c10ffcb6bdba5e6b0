@@ -1,0 +1,21 @@
+package org.ssglobal.training.codes;
+
+import java.io.IOException;
+
+public class ExecuteCommandGrades {
+	
+	public void main(String[] args) {
+		
+		String[] cmdArray = new String[2];
+		cmdArray[0] = "cmd.exe";
+		cmdArray[0] = "";
+		
+		Runtime rt = Runtime.getRuntime();
+		try {
+			rt.exec(cmdArray);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

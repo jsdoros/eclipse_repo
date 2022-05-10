@@ -1,0 +1,28 @@
+package org.ssglobal.training.codes.util;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class TestScanner {
+
+	public static void main(String[] args) {
+		// Reading File
+		File file = new File("./src/config/names.txt");
+		try {
+			Scanner scan = new Scanner(file);
+			while(scan.hasNext()) {
+				System.out.println(scan.next());
+			}
+			scan.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} 								
+		
+		// Input keyboard
+		Scanner scanKey = new Scanner(System.in);
+		System.out.println("Input a name");
+		String name = scanKey.next();
+	}
+
+}

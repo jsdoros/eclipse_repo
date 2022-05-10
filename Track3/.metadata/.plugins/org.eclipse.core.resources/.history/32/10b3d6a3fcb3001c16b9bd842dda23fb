@@ -1,0 +1,9 @@
+
+public class TestBlockWordString {
+	String blockword = "This is how we would ordinarily write a sentence";
+	int size = 5;
+	 
+    String[] word = blockword.split("" + size + "");
+    System.out.println(Arrays.toString(word));
+    
+}

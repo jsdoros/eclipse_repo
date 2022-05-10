@@ -1,0 +1,16 @@
+package org.ssglobal.training.codes;
+
+import java.io.IOException;
+
+public class ExecuteCommandGrades {
+	
+	public void main(String[] args) throws IOException {
+		
+		Runtime.getRuntime().exec(new String[] {"cmd", "/K", "Start"});
+		
+	
+		
+	
+	}
+
+}

@@ -1,0 +1,35 @@
+package org.ssglobal.training.codes;
+
+import java.util.Scanner;
+
+public class Mileage {
+
+	public static void main(String[] args) {
+	}
+	
+	public String inputDetails(){
+		
+		// Initialize
+		String name = "";
+		Double pricePerGal = 0.0;
+		
+		
+		
+		// Input
+		
+		Scanner s = new Scanner;
+		System.out.println("Enter your name.");
+		name = s.nextLine()
+		
+		return null;
+		
+
+	}
+
+	
+	public void computeMileage(){
+		
+
+	}
+
+}

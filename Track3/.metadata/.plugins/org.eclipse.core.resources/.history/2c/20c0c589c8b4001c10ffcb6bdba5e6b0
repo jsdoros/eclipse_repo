@@ -1,0 +1,11 @@
+package org.ssglobal.training.codes.util;
+
+public class TestGetProperties {
+
+	public static void main(String[] args) {
+		// Scenario: You know the keys.
+		
+		// Scenario: You do not know the keys.
+	}
+
+}

@@ -1,0 +1,9 @@
+package org.ssglobal.training.codes.wrappers;
+
+public class Palindrome {
+	
+	public boolean isPalindrome() {
+		
+	}
+
+}

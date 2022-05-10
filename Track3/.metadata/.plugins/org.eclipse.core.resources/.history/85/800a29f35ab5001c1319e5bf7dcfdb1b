@@ -1,0 +1,8 @@
+package org.ssglobal.training.codes.util;
+
+public class Diary {
+
+		public void createEvent() {
+			
+		}
+}

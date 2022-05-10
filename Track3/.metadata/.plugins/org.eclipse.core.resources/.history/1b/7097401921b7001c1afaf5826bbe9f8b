@@ -1,0 +1,65 @@
+package org.ssglobal.training.codes.io;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.StreamTokenizer;
+
+public class TestStreamTokenizer {
+
+	public static void main(String[] args) {
+
+		int[] sum = new int [4];
+		String fruit = null;
+		double avg = 0.0;
+		int counter = 0;
+		
+		try {
+			FileReader fr = new FileReader("./src/config/mines.txt");
+			StreamTokenizer tokenizer = new StreamTokenizer(fr);
+			
+			int tokenType = tokenizer.nextToken();
+			
+			while(!(tokenType == StreamTokenizer.TT_EOF)) {
+				
+				if(tokenType == StreamTokenizer.TT_NUMBER) {
+					switch(fruit) {
+						case "apple":
+							sum[0] += (int) tokenizer.nval;
+							counter++;
+							break;
+						case "lemon":
+							sum[1] += (int) tokenizer.nval;
+							counter++;
+							break;
+						case "banana":
+							sum[2] += (int) tokenizer.nval;
+							counter++;
+							break;
+						case "avocado":
+							sum[3] += (int) tokenizer.nval;
+							counter++;
+							break;					
+					}
+					//System.out.println(tokenizer.nval);
+				}else if (tokenType == StreamTokenizer.TT_WORD) {
+					//System.out.println(tokenizer.sval);
+					fruit = tokenizer.sval.toLowerCase();
+					counter = 0;
+					avg = sum[0] / counter;
+				} 
+				
+				tokenType = tokenizer.nextToken();				
+			}
+			fr.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		for(int s : sum) {
+			System.out.println(s);
+		}
+	}
+}

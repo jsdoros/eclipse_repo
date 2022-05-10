@@ -1,0 +1,11 @@
+package org.ssglobal.training.codes;
+
+public class TestMyCalendar {
+
+	public static void main(String[] args) {
+		MyCalendar test = new MyCalendar();
+		test.printCalendar(int month, int year);
+
+	}
+
+}

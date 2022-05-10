@@ -1,0 +1,25 @@
+package org.ssglobal.training.codes.util;
+
+import java.util.Date;
+
+public class TestDates {
+
+	public static void main(String[] args) {
+		
+		// The date Now()
+		Date now = new Date();
+		System.out.println(now.toString());
+		
+		// Custom date
+		Date electionDay = new Date(122, 4, 9); // deprecated
+		System.out.println(electionDay);
+		
+		long today = System.currentTimeMillis();
+		Date todayDate = new Date(today);
+		System.out.println(todayDate);
+
+		// Utilities
+		System.out.println(now.getYear());
+	}
+
+}

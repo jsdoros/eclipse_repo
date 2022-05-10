@@ -1,0 +1,22 @@
+package org.ssglobal.training.codes.time;
+
+import java.time.LocalDate;
+import java.time.Month;
+
+public class TestLocalDate {
+
+	public static void main(String[] args) {
+		LocalDate now = LocalDate.now();
+		System.out.println(now);
+		
+		LocalDate electionDay = LocalDate.of(2022, 5, 9);
+		System.out.println(electionDay);
+		
+		LocalDate xmas = LocalDate.of(2022, Month.DECEMBER, 9);
+		System.out.println(xmas);
+		
+		String bday = "2022-06-10";
+		LocalDate bdayLocal = LocalDate.parse(bday);
+		System.out.println(bdayLocal);
+	}
+}

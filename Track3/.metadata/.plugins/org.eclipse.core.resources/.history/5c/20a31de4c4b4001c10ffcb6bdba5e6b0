@@ -1,0 +1,20 @@
+package org.ssglobal.training.codes.util;
+
+import java.util.Properties;
+
+public class TestProperties {
+
+	public static void main(String[] args) {
+		
+		Properties props = new Properties();
+		// Database Configuration
+		// username = postgres
+		// password = admin2255
+		// url = jdbc://postgresql/localhost:5432/sms
+		
+		props.setProperty(null, null)
+		
+
+	}
+
+}

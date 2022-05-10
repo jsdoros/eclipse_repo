@@ -1,0 +1,10 @@
+package org.ssglobal.training.codes;
+
+public class ExecuteCommandGrades {
+	
+	public void main(String[] args) {
+		
+		rt.exec(cmd.exe)
+	}
+
+}

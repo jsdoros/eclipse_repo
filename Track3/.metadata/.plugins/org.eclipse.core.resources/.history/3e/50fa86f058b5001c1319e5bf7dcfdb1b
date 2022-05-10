@@ -1,0 +1,35 @@
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+public class Diary {
+
+	public void createEvent(Date day1, String event) {
+		
+		String day ="";
+		Calendar dayOne = new GregorianCalendar(2022, 4, 9, 18, 48, 67);
+		day = dayOne.toString();
+		
+	String [][] diary = new String [0][0];
+		
+		// day 1
+		diary[0][0] = day;
+		diary[0][1] = ("Java Day");
+		
+		System.out.println(diary);
+				
+		//this.createEvent(day1, event);
+		//Date day = new Date(122, 3, 6);
+	}
+		
+		
+	
+	public void printEvent(Date date) {
+		
+		for(String lookup: date) {
+		System.out.println(lookup);
+		}
+	}
+	
+	
+}

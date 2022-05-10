@@ -1,0 +1,10 @@
+package org.ssglobal.training.codes;
+
+public class Season {
+	
+	public void season(int year, int month, int day) {
+	
+		int month = 0
+	}
+
+}
